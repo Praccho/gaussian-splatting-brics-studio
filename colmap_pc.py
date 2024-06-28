@@ -68,12 +68,13 @@ def create_files(args, params_path, input_image_path):
     image_names = []
     image_dirs = list(sorted(glob(f"{input_image_path}/*cam*")))
     for image_dir in image_dirs:
-        img_name = os.path.basename(sorted(glob(f"{image_dir}/*.png"))[0])
+        img_name = os.path.basename(sorted(glob(f"{image_dir}/*.jpg"))[0])
         name = os.path.join(os.path.basename(image_dir), img_name)
         image_names.append(name)
 
     img_params = []
     cam_params = []
+    return
 
     # read the params file
     with open(params_path) as f:
