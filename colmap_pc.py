@@ -74,7 +74,6 @@ def create_files(args, params_path, input_image_path):
 
     img_params = []
     cam_params = []
-    return
 
     # read the params file
     with open(params_path) as f:
